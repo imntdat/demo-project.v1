@@ -1,0 +1,16 @@
+{
+  "name": "@demo/root",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "build:core": "nx build @demo/core",
+    "dev:core": "nx dev @demo/core"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/nx-cloud": "latest",
+    "nx": "15.0.5",
+    "prettier": "^2.6.2"
+  }
+}
