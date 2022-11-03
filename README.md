@@ -2,13 +2,10 @@
 
 This project is a monorepo which used **[Nx](https://nx.dev/getting-started/package-based-repo-tutorial)** to create a new workspace, **[PNPM](https://pnpm.io/installation)** to manage workspace and **[Vite](https://vitejs.dev/guide/)** to create packages inside the workspace.
 
-<div style="display: flex; align-items: center; justify-content: center; column-gap: 12px; margin: 40px 0">
+<div>
     <img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />
-    <span style="font-size: 24px; font-weight: 600">+</span>
     <img src="https://d33wubrfki0l68.cloudfront.net/aad219b6c931cebb53121dcda794f6180d9e4397/17f34/assets/images/pnpm-standard-79c9dbb2e99b8525ae55174580061e1b.svg" height="100px" />
-    <span style="font-size: 24px; font-weight: 600">+</span>
     <img src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" height="100px" />
-    <span style="font-size: 24px; font-weight: 600">+</span>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="100px" />
 </div>
 
@@ -126,9 +123,7 @@ Add <code>build</code> & <code>dev</code> commands for the new package
 
 ## 5. Config new package
 
-Move to the new package has just generated, run:
-
-The variable needs to replace: <package_name>
+Move to the new package has just generated
 
 ```console
 > cd <package_name>
@@ -136,7 +131,7 @@ The variable needs to replace: <package_name>
 
 ### 5.1. Config package.json file
 
-Change properties: name, main, types
+Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 
 ```json
 {
@@ -150,7 +145,7 @@ Change properties: name, main, types
 
 ### 5.2. Downgrade from Vue 3 to Vue 2
 
-Install dependencies, run:
+Install dependencies
 
 ```console
 > pnpm i path vite-plugin-vue2 vue@^2.7.13
@@ -173,8 +168,6 @@ new Vue({ render: (h) => h(App) }).$mount("#app")
 ### 5.4. Config vite.config.ts file
 
 Copy and paste these scripts
-
-The variable needs to replace: <package_name>
 
 ```ts
 import path from "path"
@@ -237,7 +230,7 @@ Copy and paste these scripts
 
 ### 5.6. Config ESLint, Prettier
 
-Install ESLint dependencies, run:
+Install ESLint dependencies
 
 ```console
 > pnpm i -D eslint
@@ -256,7 +249,7 @@ Install ESLint dependencies, run:
 ? Which package manager do you want to use?: pnpm
 ```
 
-Install Prettier dependencies, run:
+Install Prettier dependencies
 
 ```console
 > pnpm i -D prettier eslint-config-prettier eslint-plugin-prettier
