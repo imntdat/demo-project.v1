@@ -7,6 +7,7 @@ This project is a monorepo which used **[Nx](https://nx.dev/getting-started/pack
     <img src="https://d33wubrfki0l68.cloudfront.net/aad219b6c931cebb53121dcda794f6180d9e4397/17f34/assets/images/pnpm-standard-79c9dbb2e99b8525ae55174580061e1b.svg" height="100px" />
     <img src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" height="100px" />
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="100px" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" height="100px" />
 </div>
 
 - [1. VSCode recommended extensions](#1-vscode-recommended-extensions)
