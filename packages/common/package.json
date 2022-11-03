@@ -1,17 +1,20 @@
 {
-  "name": "@demo/core",
+  "name": "@demo/common",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "exports": {
+    ".": "./dist/main.js",
+    "./styles.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@demo/common": "workspace:^0.0.1",
     "path": "^0.12.7",
     "vite-plugin-vue2": "^2.0.2",
     "vue": "^2.7.13"
