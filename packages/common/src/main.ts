@@ -1,3 +1,1 @@
-import TodoList from "@/components/TodoList.vue"
-
-export { TodoList }
+export * from "./components"

@@ -1,13 +1,18 @@
 <template>
   <ul class="todo-list">
-    <li v-for="item in data" :key="item">{{ item }}</li>
+    <todo-list-item v-for="item in data" :key="item" :text="item" />
+    <div />
   </ul>
 </template>
 
 <script lang="ts">
 import Vue, { PropType } from "vue"
 
+import TodoListItem from "./TodoListItem.vue"
+
 export default Vue.extend({
+  components: { TodoListItem },
+
   props: {
     data: {
       type: Array as PropType<string[]>,
