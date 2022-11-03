@@ -1,4 +1,72 @@
-.prettierrc.cjs file
+# Project Instruduction
+
+This project is a monorepo which used **[Nx](https://nx.dev/getting-started/package-based-repo-tutorial)** to create a new workspace, **[PNPM](https://pnpm.io/installation)** to manage workspace and **[Vite](https://vitejs.dev/guide/)** to create packages inside the workspace.
+
+<div style="display: flex; align-items: center; justify-content: center; column-gap: 12px; margin: 40px 0">
+    <img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />
+    <span style="font-size: 24px; font-weight: 600">+</span>
+    <img src="https://d33wubrfki0l68.cloudfront.net/aad219b6c931cebb53121dcda794f6180d9e4397/17f34/assets/images/pnpm-standard-79c9dbb2e99b8525ae55174580061e1b.svg" height="100px" />
+    <span style="font-size: 24px; font-weight: 600">+</span>
+    <img src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" height="100px" />
+    <span style="font-size: 24px; font-weight: 600">+</span>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="100px" />
+</div>
+
+- [1. VSCode recommended extensions](#1-vscode-recommended-extensions)
+- [2. Common commands](#2-common-commands)
+- [3. Create new workspace](#3-create-new-workspace)
+- [4. Create new package](#4-create-new-package)
+  - [4.1. Installation](#41-installation)
+  - [4.2 Config root <code>package.json</code> file](#42-config-root-packagejson-file)
+- [5. Config new package](#5-config-new-package)
+  - [5.1. Config <code>package.json</code> file](#51-config-packagejson-file)
+  - [5.2. Downgrade from **Vue 3** to **Vue 2**](#52-downgrade-from-vue-3-to-vue-2)
+  - [5.3. Config <code>main.ts</code> file](#53-config-maints-file)
+  - [5.4. Config <code>vite.config.ts</code> file](#54-config-viteconfigts-file)
+  - [5.5. Config <code>tsconfig.json</code> file](#55-config-tsconfigjson-file)
+  - [5.6. Config **ESLint**, **Prettier**](#56-config-eslint-prettier)
+- [6. Templates](#6-templates)
+  - [6.1. Vue component](#61-vue-component)
+
+---
+
+## 1. VSCode recommended extensions
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)
+- [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+---
+
+## 2. Common commands
+
+<b>It's almost the same as NPM</b>
+
+Install dependencies
+
+```console
+> pnpm i ...
+```
+
+Install dependencies to a specificial package
+
+```console
+> pnpm --filter <package_name> i ...
+```
+
+---
+
+## 3. Create new workspace
+
+```console
+> pnpx create-nx-workspace@latest <project_name>
+
+? Choose your style: Package-based: Craft your own setup. Nx makes it fast, but lets you run things your way.
+? Enable distributed caching to make your CI faster: Yes
+```
+
+In the <strong>root</strong> folder, overide the <code>.prettierrc.cjs</code> file
 
 ```cjs
 module.exports = {
@@ -16,19 +84,17 @@ module.exports = {
 }
 ```
 
-# 1. Create new package
+## 4. Create new package
 
-### 1.1 Installation
+### 4.1 Installation
 
-Move to packages folder, run: cd packages
-
-The variable needs to replace: <package_name>
+Move to <code>packages</code> folder
 
 ```console
 > cd packages
 ```
 
-Then, run:
+Then, run
 
 ```console
 > pnpm create vite
@@ -38,13 +104,11 @@ Then, run:
 ? Select a variant: TypeScript
 ```
 
-**Remove .vscode folder**
+*Remove <code>.vscode</code> folder to avoid conflicting with **root** <code>.vscode</code> folder*
 
-### 1.2 Config root package.json file
+### 4.2 Config root package.json file
 
-Add build & dev commands for the new package
-
-The variable needs to replace: <package_name>
+Add <code>build</code> & <code>dev</code> commands for the new package
 
 ```json
 {
@@ -60,7 +124,7 @@ The variable needs to replace: <package_name>
 
 ---
 
-# 2. Config new package
+## 5. Config new package
 
 Move to the new package has just generated, run:
 
@@ -70,7 +134,7 @@ The variable needs to replace: <package_name>
 > cd <package_name>
 ```
 
-### 2.1. Config package.json file
+### 5.1. Config package.json file
 
 Change properties: name, main, types
 
@@ -84,7 +148,7 @@ Change properties: name, main, types
 }
 ```
 
-### 2.2. Downgrade from Vue 3 to Vue 2
+### 5.2. Downgrade from Vue 3 to Vue 2
 
 Install dependencies, run:
 
@@ -96,7 +160,7 @@ Install dependencies, run:
 > pnpm i -D @types/node vite-plugin-dts vue-template-compiler sass
 ```
 
-### 2.3. Config main.ts file
+### 5.3. Config main.ts file
 
 ```ts
 import Vue from "vue"
@@ -106,7 +170,7 @@ import App from "./App.vue"
 new Vue({ render: (h) => h(App) }).$mount("#app")
 ```
 
-### 2.4. Config vite.config.ts file
+### 5.4. Config vite.config.ts file
 
 Copy and paste these scripts
 
@@ -137,7 +201,7 @@ export default defineConfig({
 })
 ```
 
-### 2.5. Config tsconfig.json file
+### 5.5. Config tsconfig.json file
 
 Copy and paste these scripts
 
@@ -171,7 +235,7 @@ Copy and paste these scripts
 }
 ```
 
-### 2.6. Config ESLint, Prettier
+### 5.6. Config ESLint, Prettier
 
 Install ESLint dependencies, run:
 
@@ -239,7 +303,9 @@ module.exports = {
 }
 ```
 
-# 3. Vue component template
+## 6. Templates
+
+## 6.1. Vue component
 
 ```vue
 <template>
