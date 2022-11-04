@@ -231,7 +231,7 @@ Copy and paste these scripts
 
 ### 5.6. Config ESLint, Prettier
 
-Install ESLint dependencies
+Install **ESLint** dependencies
 
 ```console
 > pnpm i -D eslint
@@ -250,7 +250,7 @@ Install ESLint dependencies
 ? Which package manager do you want to use?: pnpm
 ```
 
-Install Prettier dependencies
+Install **Prettier** dependencies
 
 ```console
 > pnpm i -D prettier eslint-config-prettier eslint-plugin-prettier
@@ -262,7 +262,7 @@ Install more a dependency to more suitable for Vue, run:
 > pnpm i -D vue-eslint-parser
 ```
 
-Copy and paste these scripts to the .eslintrc.cjs file
+Copy and paste these scripts to the <code>.eslintrc.cjs</code> file
 
 ```cjs
 module.exports = {
