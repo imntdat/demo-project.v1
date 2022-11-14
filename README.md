@@ -296,6 +296,7 @@ module.exports = {
       "error",
       {
         endOfLine: "auto",
+        htmlWhitespaceSensitivity: "ignore",
       },
     ],
 
@@ -309,8 +310,11 @@ module.exports = {
     ],
     "vue/component-name-in-template-casing": ["error", "kebab-case"],
     "vue/custom-event-name-casing": ["error", "kebab-case"],
+    "vue/html-self-closing": "off",
     "vue/multi-word-component-names": "off",
+    "vue/multiline-html-element-content-newline": "off",
     "vue/padding-line-between-blocks": "error",
+    "vue/singleline-html-element-content-newline": "off",
     "vue/sort-keys": "error",
   },
 }
