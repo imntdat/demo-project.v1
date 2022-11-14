@@ -186,9 +186,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/main.ts"),
-      name: "demo-<package_name>",
-      formats: ["es"],
       fileName: "main",
+      formats: ["es"],
+      name: "<project_name>-<package_name>",
     },
   },
   plugins: [vue2(), dts()],
