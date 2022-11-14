@@ -110,11 +110,12 @@ Add <code>build</code> & <code>dev</code> commands for the new package
 
 ```json
 {
+  "name": "@<project_name>/root",
   ...
   "scripts": {
     ...
-    "build:<package_name>": "nx build @demo/<package_name>",
-    "dev:<package_name>": "nx dev @demo/<package_name>"
+    "build:<package_name>": "nx build @<project_name>/<package_name>",
+    "dev:<package_name>": "nx dev @<project_name>/<package_name>"
   },
   ...
 }
