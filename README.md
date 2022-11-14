@@ -139,6 +139,9 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 {
   "name": "@<project_name>/<package_name>",
   ...
+  "files": [
+    "dist"
+  ],
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "scripts": {
