@@ -137,7 +137,7 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 
 ```json
 {
-  "name": "@demo/<package_name>",
+  "name": "@<project_name>/<package_name>",
   ...
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
