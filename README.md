@@ -141,6 +141,10 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
   ...
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "scripts": {
+    "dev": "vite --host --port <port>",
+    ...
+  },
   ...
 }
 ```
