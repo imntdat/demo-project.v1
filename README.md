@@ -4,16 +4,9 @@ This project is a monorepo which used **[Nx](https://nx.dev/getting-started/pack
 
 [<img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />](https://nx.dev/)
 [<img src="https://d33wubrfki0l68.cloudfront.net/aad219b6c931cebb53121dcda794f6180d9e4397/17f34/assets/images/pnpm-standard-79c9dbb2e99b8525ae55174580061e1b.svg" height="100px" />](https://pnpm.io/)
-
-<div>
-    <a href="https://nx.dev/" target="_blank">
-        <img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />
-    </a>
-    <img src="https://d33wubrfki0l68.cloudfront.net/aad219b6c931cebb53121dcda794f6180d9e4397/17f34/assets/images/pnpm-standard-79c9dbb2e99b8525ae55174580061e1b.svg" height="100px" />
-    <img src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" height="100px" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="100px" />
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" height="100px" />
-</div>
+[<img src="https://seeklogo.com/images/V/vite-logo-BFD4283991-seeklogo.com.png" height="100px" />](https://vitejs.dev/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="100px" />](https://v2.vuejs.org/)
+[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png" height="100px" />](https://www.typescriptlang.org/)
 
 - [1. VSCode recommended extensions](#1-vscode-recommended-extensions)
 - [2. Common commands](#2-common-commands)
