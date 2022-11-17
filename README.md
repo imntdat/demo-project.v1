@@ -2,6 +2,8 @@
 
 This project is a monorepo which used **[Nx](https://nx.dev/getting-started/package-based-repo-tutorial)** to create a new workspace, **[PNPM](https://pnpm.io/installation)** to manage workspace and **[Vite](https://vitejs.dev/guide/)** to create packages inside the workspace.
 
+[<img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />](https://nx.dev/){:target="_blank"}
+
 <div>
     <a href="https://nx.dev/" target="_blank">
         <img src="https://seeklogo.com/images/N/nx-logo-8EB5A23B44-seeklogo.com.png" height="100px" />
