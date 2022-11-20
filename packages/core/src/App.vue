@@ -17,61 +17,30 @@
       </a>
     </div>
 
-    <HelloWorld msg="asdasdas" />
+    <hello-world msg="asdasdas" />
 
-    <button
-      href="https://vuejs.org/"
-      target="_blank"
-      hresf="https://vuejs.org/"
-      tagrget="_blank"
-      hsref="https://vuejs.org/"
-      targeft="_blank"
-    >
-      ASDA
-    </button>
+    <todo-list :data="['abas', 'asdasdadasd', '123123213']" />
 
-    <TodoList :data="['abas', 'asdasdadasd', '123123213']" />
+    <a-input />
+
+    <a-button @click="showMessage">Click</a-button>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent } from "vue"
 
 import { TodoList } from "@demo/common"
 
 import HelloWorld from "@/components/HelloWorld.vue"
 
-export default Vue.extend({
+export default defineComponent({
   components: { HelloWorld, TodoList },
+
+  methods: {
+    showMessage() {
+      this.$notification.success({ description: "", message: "Click" })
+    },
+  },
 })
 </script>
-
-<style lang="scss">
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-
-  &:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-
-  &.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
-  }
-}
-
-.todo-list {
-  list-style-type: none;
-
-  li {
-    padding: 6px;
-    background: rgba(0, 0, 0, 0.05);
-    color: black;
-
-    & + li {
-      margin-top: 8px;
-    }
-  }
-}
-</style>

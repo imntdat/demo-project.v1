@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "build": "nx run-many --target=build",
     "build:common": "nx build @demo/common",
     "build:core": "nx build @demo/core",
     "dev:common": "nx dev @demo/common",
     "dev:core": "nx dev @demo/core"
   },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nrwl/nx-cloud": "latest",
     "nx": "15.0.5",

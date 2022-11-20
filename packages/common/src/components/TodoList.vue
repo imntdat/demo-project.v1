@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "vue"
 
 import TodoListItem from "./TodoListItem.vue"
 
-export default Vue.extend({
+export default defineComponent({
   components: { TodoListItem },
 
   props: {
@@ -28,7 +28,8 @@ export default Vue.extend({
 
   li {
     padding: 6px;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.03);
+    color: yellowgreen;
 
     & + li {
       margin-top: 8px;

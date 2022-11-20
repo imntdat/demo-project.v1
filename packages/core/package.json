@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@demo/common": "workspace:^0.0.1",
+    "ant-design-vue": "^1.7.8",
     "path": "^0.12.7",
     "vite-plugin-vue2": "^2.0.2",
     "vue": "^2.7.13"
@@ -29,6 +30,7 @@
     "sass": "^1.55.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.0",
+    "vite-plugin-antdv-fix": "^1.0.3",
     "vite-plugin-dts": "^1.6.6",
     "vue-eslint-parser": "^9.1.0",
     "vue-template-compiler": "^2.7.13",

@@ -5,16 +5,13 @@
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
-  "exports": {
-    ".": "./dist/main.js",
-    "./styles.css": "./dist/style.css"
-  },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch --mode development",
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^1.7.8",
     "path": "^0.12.7",
     "vite-plugin-vue2": "^2.0.2",
     "vue": "^2.7.13"
@@ -28,10 +25,12 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.7.0",
+    "less": "^3.13.1",
     "prettier": "^2.6.2",
     "sass": "^1.55.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.0",
+    "vite-plugin-antdv-fix": "^1.0.3",
     "vite-plugin-dts": "^1.6.6",
     "vue-eslint-parser": "^9.1.0",
     "vue-template-compiler": "^2.7.13",

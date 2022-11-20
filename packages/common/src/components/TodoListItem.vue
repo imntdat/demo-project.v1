@@ -1,11 +1,14 @@
 <template>
-  <li>{{ text }}</li>
+  <a-tag>{{ text }}</a-tag>
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { Tag as ATag } from "ant-design-vue"
+import { defineComponent } from "vue"
 
-export default Vue.extend({
+export default defineComponent({
+  components: { ATag },
+
   props: {
     text: {
       type: String,
