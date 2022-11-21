@@ -323,7 +323,6 @@ module.exports = {
     "vue/multiline-html-element-content-newline": "off",
     "vue/padding-line-between-blocks": "error",
     "vue/singleline-html-element-content-newline": "off",
-    "vue/sort-keys": "error",
   },
 }
 ```
