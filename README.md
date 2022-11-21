@@ -152,14 +152,20 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 
 ### 5.2. Downgrade from Vue 3 to Vue 2
 
+Uninstall dependencies are not suitable for Vue 2
+
+```console
+> pnpm uninstall @vitejs/plugin-vue
+```
+
 Install dependencies
 
 ```console
-> pnpm i path vite-plugin-vue2 vue@^2.7.13
+> pnpm i path vue@^2.7.13
 ```
 
 ```console
-> pnpm i -D @types/node vite-plugin-dts vue-template-compiler sass
+> pnpm i -D @types/node @vitejs/plugin-vue2 vite-plugin-dts vue-template-compiler sass
 ```
 
 ### 5.3. Config main.ts file
@@ -177,10 +183,10 @@ new Vue({ render: (h) => h(App) }).$mount("#app")
 Copy and paste these scripts
 
 ```ts
+import vue from "@vitejs/plugin-vue2"
 import path from "path"
 import { defineConfig } from "vite"
 import dts from "vite-plugin-dts"
-import { createVuePlugin as vue2 } from "vite-plugin-vue2"
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -192,7 +198,7 @@ export default defineConfig({
       name: "<project_name>-<package_name>",
     },
   },
-  plugins: [vue2(), dts()],
+  plugins: [vue(), dts()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
