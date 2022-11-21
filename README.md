@@ -209,6 +209,7 @@ Copy and paste these scripts
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": true,
     "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "preserve",
