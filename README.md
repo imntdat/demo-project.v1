@@ -23,7 +23,7 @@ This project is a monorepo which used **[Nx](https://nx.dev/getting-started/pack
   - [5.6. Config **ESLint**, **Prettier**](#56-config-eslint-prettier)
 - [6. Templates](#6-templates)
   - [6.1. Vue component](#61-vue-component)
-- [7. Compatible dependencies with Vue 2.7](#7-compatible-dependencies-with-vue-27)
+- [7. Compatible dependencies with Vue 2.7 & Docs](#7-compatible-dependencies-with-vue-27)
 
 ---
 
