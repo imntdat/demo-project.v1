@@ -152,7 +152,7 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 Uninstall dependencies are not suitable for Vue 2.7
 
 ```console
-> pnpm uninstall @vitejs/plugin-vue vue-template-compiler
+> pnpm uninstall @vitejs/plugin-vue
 ```
 
 Install dependencies
@@ -162,7 +162,7 @@ Install dependencies
 ```
 
 ```console
-> pnpm i -D @types/node @vitejs/plugin-vue2 less vite-plugin-antdv-fix vite-plugin-dts vue-template-compiler sass
+> pnpm i -D @types/node @vitejs/plugin-vue2 less vite-plugin-antdv-fix vite-plugin-dts sass
 ```
 
 ### 5.3. Config main.ts file
