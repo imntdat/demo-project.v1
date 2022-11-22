@@ -357,6 +357,6 @@ export default defineComponent({})
 <style lang="scss" scoped></style>
 ```
 
-## 7. Compatible dependencies with Vue 2.7
+## 7. Compatible dependencies with Vue 2.7 & Docs
 
 [Ant Design Vue (ant-design-vue@^1.7.8)](https://1x.antdv.com/docs/vue/introduce/)
