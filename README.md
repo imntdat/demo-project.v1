@@ -234,6 +234,7 @@ Copy and paste these scripts
     "paths": {
       "@/*": ["src/*"]
     },
+    "preserveSymlinks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
