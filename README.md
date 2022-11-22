@@ -152,7 +152,7 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 
 ### 5.2. Downgrade from Vue 3 to Vue 2.7
 
-Uninstall dependencies are not suitable for Vue 2
+Uninstall dependencies are not suitable for Vue 2.7
 
 ```console
 > pnpm uninstall @vitejs/plugin-vue
