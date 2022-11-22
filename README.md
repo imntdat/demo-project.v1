@@ -158,7 +158,7 @@ Uninstall dependencies are not suitable for Vue 2.7
 Install dependencies
 
 ```console
-> pnpm i ant-design-vue path vue@^2.7.13 vue-router@^3.6.5 vuex@^3.4.0
+> pnpm i ant-design-vue@^1.7.8 path vue@^2.7.13 vue-router@^3.6.5 vuex@^3.4.0
 ```
 
 ```console
