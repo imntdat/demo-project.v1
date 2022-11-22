@@ -23,6 +23,7 @@ This project is a monorepo which used **[Nx](https://nx.dev/getting-started/pack
   - [5.6. Config **ESLint**, **Prettier**](#56-config-eslint-prettier)
 - [6. Templates](#6-templates)
   - [6.1. Vue component](#61-vue-component)
+- [7. Compatible dependencies with Vue 2.7](#7-compatible-dependencies-with-vue-27)
 
 ---
 
@@ -100,7 +101,7 @@ Then, run
 ? Select a variant: TypeScript
 ```
 
-*Remove <code>.vscode</code> folder to avoid conflicting with **root** <code>.vscode</code> folder*
+_Remove <code>.vscode</code> folder to avoid conflicting with **root** <code>.vscode</code> folder_
 
 ### 4.2 Config root package.json file
 
@@ -149,7 +150,7 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 
 ### 5.2. Downgrade from Vue 3 to Vue 2.7
 
-Uninstall dependencies are not suitable for Vue 2.7
+Uninstall dependencies are not compatible with Vue 2.7
 
 ```console
 > pnpm uninstall @vitejs/plugin-vue
@@ -278,7 +279,7 @@ Install **Prettier** dependencies
 > pnpm i -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
-Install more a dependency to more suitable for Vue, run:
+Install more a dependency to more compatible with Vue, run:
 
 ```console
 > pnpm i -D vue-eslint-parser
@@ -340,7 +341,7 @@ module.exports = {
 
 ## 6. Templates
 
-## 6.1. Vue component
+### 6.1. Vue component
 
 ```vue
 <template>
@@ -355,3 +356,7 @@ export default defineComponent({})
 
 <style lang="scss" scoped></style>
 ```
+
+## 7. Compatible dependencies with Vue 2.7
+
+[Ant Design Vue (ant-design-vue@^1.7.8)](https://1x.antdv.com/docs/vue/introduce/)
