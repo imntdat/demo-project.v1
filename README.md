@@ -137,13 +137,10 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 {
   "name": "@<project_name>/<package_name>",
   ...
-  "files": [
-    "dist"
-  ],
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "scripts": {
-    "dev": "vite --host --port <port>",
+    "dev": "vite build -m development -w",
     ...
   },
   ...
@@ -155,17 +152,17 @@ Change properties: <code>name</code>, <code>main</code>, <code>types</code>
 Uninstall dependencies are not suitable for Vue 2.7
 
 ```console
-> pnpm uninstall @vitejs/plugin-vue
+> pnpm uninstall @vitejs/plugin-vue vue-template-compiler
 ```
 
 Install dependencies
 
 ```console
-> pnpm i path vue@^2.7.13
+> pnpm i ant-design-vue path vue@^2.7.13 vue-router@^3.6.5 vuex@^3.4.0
 ```
 
 ```console
-> pnpm i -D @types/node @vitejs/plugin-vue2 vite-plugin-dts vue-template-compiler sass
+> pnpm i -D @types/node @vitejs/plugin-vue2 less vite-plugin-antdv-fix vite-plugin-dts vue-template-compiler sass
 ```
 
 ### 5.3. Config main.ts file
@@ -186,11 +183,15 @@ Copy and paste these scripts
 import vue from "@vitejs/plugin-vue2"
 import path from "path"
 import { defineConfig } from "vite"
+import antdvFix from "vite-plugin-antdv-fix"
 import dts from "vite-plugin-dts"
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
     lib: {
       entry: path.resolve(__dirname, "src/main.ts"),
       fileName: "main",
@@ -198,7 +199,14 @@ export default defineConfig({
       name: "<project_name>-<package_name>",
     },
   },
-  plugins: [vue(), dts()],
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
+  plugins: [vue(), dts(), antdvFix()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
