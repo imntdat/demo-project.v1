@@ -16,7 +16,7 @@ This project is a monorepo which used **[Nx](https://nx.dev/getting-started/pack
   - [4.2 Config root <code>package.json</code> file](#42-config-root-packagejson-file)
 - [5. Config new package](#5-config-new-package)
   - [5.1. Config <code>package.json</code> file](#51-config-packagejson-file)
-  - [5.2. Downgrade from **Vue 3** to **Vue 2**](#52-downgrade-from-vue-3-to-vue-2)
+  - [5.2. Downgrade from **Vue 3** to **Vue 2.7**](#52-downgrade-from-vue-3-to-vue-27)
   - [5.3. Config <code>main.ts</code> file](#53-config-maints-file)
   - [5.4. Config <code>vite.config.ts</code> file](#54-config-viteconfigts-file)
   - [5.5. Config <code>tsconfig.json</code> file](#55-config-tsconfigjson-file)
